@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 class App extends React.Component {
   render() {
     return (
+  
       <div className="bg-dark">
         <Router>
           <Navbar></Navbar>
@@ -24,6 +25,7 @@ class App extends React.Component {
           {/* <Footer2></Footer2> */}
         </Router>
       </div>
+     
     );
   }
 }

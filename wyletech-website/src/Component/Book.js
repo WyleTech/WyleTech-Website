@@ -50,12 +50,14 @@ export default class Book extends React.Component {
   };
   render() {
     return (
-      <div>
-        <header className="App-header">
+      <div class="container ">
+        <header className="Form">
           <form onSubmit={this.handleSubmit}>
             {/* First Name Form */}
-            <div className="form-group text-white-50">
+            <div className="form-row text-white-50 ">
+            <div class="col-md-4">
               <label htmlFor="exampleInputFirstName">First Name</label>
+
               <input
                 type="name"
                 className="form-control"
@@ -63,10 +65,11 @@ export default class Book extends React.Component {
                 placeholder="First Name"
                 onChange={this.handleChange}
               />
-            </div>
-
+          
+          </div>
+          <div class="col-md-4 ">
             {/* Last Name Form */}
-            <div className="form-group text-white-50">
+        
               <label htmlFor="exampleInputLastName">Last Name</label>
               <input
                 type="name"
@@ -74,9 +77,24 @@ export default class Book extends React.Component {
                 id="exampleInputLastName"
                 placeholder="Last Name"
               />
-            </div>
+               </div>
+
+               <div class="col-md-4 ">
+            {/* Last Name Form */}
+        
+              <label htmlFor="exampleInputLastName">Organization Name</label>
+              <input
+                type="name"
+                className="form-control"
+                id="exampleInputLastName"
+                placeholder="Organization Name"
+              />
+               </div>
+               </div>
+        
             {/* Email Form */}
-            <div className="form-group text-white-50">
+            <div className="form-row text-white-50 ">
+            <div class="col-md-4 ">
               <label htmlFor="exampleInputEmail1">Email</label>
               <input
                 type="email"
@@ -86,110 +104,22 @@ export default class Book extends React.Component {
                 placeholder="You@example.com"
               />
             </div>
-            {/* Address Form */}
-            <div className="form-group text-white-50">
-              <label htmlFor="exampleInputstreet_address">Address</label>
-              <input
-                type="address"
-                className="form-control"
-                id="InputAddress"
-                placeholder="123 Market St"
-              />
-            </div>
-            {/* Address 2 (optional) Form */}
-            <div className="form-group text-white-50">
-              <label htmlFor="exampleInputstreet_address">
-                Address 2 (optional)
-              </label>
-              <input
-                type="address"
-                className="form-control"
-                id="InputAddress2"
-                placeholder="Apartment or suite"
-              />
-            </div>
-            {/* City Form*/}
-            <div className="form-row text-white-50">
-              <div className="form-group col-md-5">
-                <label htmlFor="inputCity">City</label>
+            {/* Phone Number Form */}
+            <div class="col-md-4 ">
+            <div className="form-group text-white-50 ">
+                <label htmlFor="inputZip">Phone Number</label>
                 <input
                   type="text"
                   className="form-control"
-                  id="inputCity"
-                  placeholder="City"
+                  id="inputPhone"
+                  placeholder="Phone Number"
                 />
               </div>
-              {/* State Selection Form */}
-              <div className="form-group col-md-3 text-white-50">
-                <label htmlFor="inputState">State</label>
-                <select id="inputState" className="form-control">
-                  <option defaultValue>Choose State</option>
-                  <option value="">N/A</option>
-                  <option value="AK">Alaska</option>
-                  <option value="AL">Alabama</option>
-                  <option value="AR">Arkansas</option>
-                  <option value="AZ">Arizona</option>
-                  <option value="CA">California</option>
-                  <option value="CO">Colorado</option>
-                  <option value="CT">Connecticut</option>
-                  <option value="DC">District of Columbia</option>
-                  <option value="DE">Delaware</option>
-                  <option value="FL">Florida</option>
-                  <option value="GA">Georgia</option>
-                  <option value="HI">Hawaii</option>
-                  <option value="IA">Iowa</option>
-                  <option value="ID">Idaho</option>
-                  <option value="IL">Illinois</option>
-                  <option value="IN">Indiana</option>
-                  <option value="KS">Kansas</option>
-                  <option value="KY">Kentucky</option>
-                  <option value="LA">Louisiana</option>
-                  <option value="MA">Massachusetts</option>
-                  <option value="MD">Maryland</option>
-                  <option value="ME">Maine</option>
-                  <option value="MI">Michigan</option>
-                  <option value="MN">Minnesota</option>
-                  <option value="MO">Missouri</option>
-                  <option value="MS">Mississippi</option>
-                  <option value="MT">Montana</option>
-                  <option value="NC">North Carolina</option>
-                  <option value="ND">North Dakota</option>
-                  <option value="NE">Nebraska</option>
-                  <option value="NH">New Hampshire</option>
-                  <option value="NJ">New Jersey</option>
-                  <option value="NM">New Mexico</option>
-                  <option value="NV">Nevada</option>
-                  <option value="NY">New York</option>
-                  <option value="OH">Ohio</option>
-                  <option value="OK">Oklahoma</option>
-                  <option value="OR">Oregon</option>
-                  <option value="PA">Pennsylvania</option>
-                  <option value="PR">Puerto Rico</option>
-                  <option value="RI">Rhode Island</option>
-                  <option value="SC">South Carolina</option>
-                  <option value="SD">South Dakota</option>
-                  <option value="TN">Tennessee</option>
-                  <option value="TX">Texas</option>
-                  <option value="UT">Utah</option>
-                  <option value="VA">Virginia</option>
-                  <option value="VT">Vermont</option>
-                  <option value="WA">Washington</option>
-                  <option value="WI">Wisconsin</option>
-                  <option value="WV">West Virginia</option>
-                  <option value="WY">Wyoming</option>
-                </select>
               </div>
-              {/* Zip Code Form */}
-              <div className="form-group col-md-4 text-white-50">
-                <label htmlFor="inputZip">Zip</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="inputZip"
-                  placeholder="Zip code"
-                />
               </div>
-            </div>
+          
+           
+          
             {/* Additional Comments Form */}
             <div className="form-group text-white-50">
               <label htmlFor="inputdescription_of_request">
@@ -205,7 +135,7 @@ export default class Book extends React.Component {
             <div className="text-center">
               <button
                 type="submit"
-                className="btn-lg btn-success"
+                className="glow-on-hover btn-lg btn-success"
                 onClick={this.handleAlert}
               >
                 Submit!
