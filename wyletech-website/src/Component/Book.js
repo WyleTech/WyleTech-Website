@@ -6,13 +6,9 @@ export default class Book extends React.Component {
   state = {
     first_name: "",
     last_name: "",
+    organization_name: "",
     email: "",
-    street_address: "",
-    street_address2: "",
-    city: "",
-    zip: "",
-    choosestate: "",
-    number_of_guests: "",
+    phone: "",
     description_of_request: ""
   };
 
@@ -31,21 +27,14 @@ export default class Book extends React.Component {
     console.log(event.target.elements[3].value);
     console.log(event.target.elements[4].value);
     console.log(event.target.elements[5].value);
-    console.log(event.target.elements[6].value);
-    console.log(event.target.elements[7].value);
-    console.log(event.target.elements[8].value);
-    console.log(event.target.elements[9].value);
     axios.post(`http://localhost:8080/api/contactus`, {
       first_name: event.target.elements[0].value,
       last_name: event.target.elements[1].value,
-      email: event.target.elements[2].value,
-      street_address: event.target.elements[3].value,
-      street_address2: event.target.elements[4].value,
-      city: event.target.elements[5].value,
-      state: event.target.elements[6].value,
-      zip: event.target.elements[7].value,
-      number_of_guests: event.target.elements[8].value,
-      description_of_request: event.target.elements[9].value
+      organization_name: event.target.elements[2].value,
+      email: event.target.elements[3].value,
+      phone: event.target.elements[4].value,
+      description_of_request: event.target.elements[5].value,
+
     });
   };
   render() {
@@ -57,11 +46,10 @@ export default class Book extends React.Component {
             <div className="form-row text-white-50 ">
             <div class="col-md-4">
               <label htmlFor="exampleInputFirstName">First Name</label>
-
               <input
                 type="name"
                 className="form-control"
-                id="exampleInputFirstName"
+                id="InputFirstName"
                 placeholder="First Name"
                 onChange={this.handleChange}
               />
@@ -74,7 +62,7 @@ export default class Book extends React.Component {
               <input
                 type="name"
                 className="form-control"
-                id="exampleInputLastName"
+                id="InputLastName"
                 placeholder="Last Name"
               />
                </div>
@@ -86,7 +74,7 @@ export default class Book extends React.Component {
               <input
                 type="name"
                 className="form-control"
-                id="exampleInputLastName"
+                id="OrganizationName"
                 placeholder="Organization Name"
               />
                </div>
@@ -99,7 +87,7 @@ export default class Book extends React.Component {
               <input
                 type="email"
                 className="form-control"
-                id="exampleInputEmail1"
+                id="InputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="You@example.com"
               />
