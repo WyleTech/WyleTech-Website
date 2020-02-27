@@ -8,7 +8,7 @@ const About = () => (
   <React.Fragment>
     <header className="page-header">
       <h1 className="About-Us-Title text-danger mx-auto text-center col-lg-9 my-5"> About Wyle-Tech </h1>
-      <p className="About-Content text-center text-danger"> We Tight, YO!</p>
+      <p className="About-Content text-center text-danger"> So Fresh and so CLEAN CLEAN!!</p>
     </header>
 
   </React.Fragment>

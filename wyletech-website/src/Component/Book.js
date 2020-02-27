@@ -27,7 +27,7 @@ export default class Book extends React.Component {
     console.log(event.target.elements[3].value);
     console.log(event.target.elements[4].value);
     console.log(event.target.elements[5].value);
-    axios.post(`http://localhost:8080/api/contactus`, {
+    axios.post(`http://localhost:8080/api/book`, {
       first_name: event.target.elements[0].value,
       last_name: event.target.elements[1].value,
       organization_name: event.target.elements[2].value,
