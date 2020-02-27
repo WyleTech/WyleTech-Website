@@ -10,6 +10,9 @@ class Home extends React.Component {
         <div className="d-block">
       
         </div>
+
+
+        
       </React.Fragment>
     );
   }
