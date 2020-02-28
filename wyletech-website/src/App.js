@@ -6,6 +6,7 @@ import Book from "./Component/Book";
 import About from "./Component/About";
 import NoMatch from "./Component/NoMatch";
 import Navbar from "./Component/Navbar";
+import Footer from "./Component/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
@@ -22,7 +23,7 @@ class App extends React.Component {
             <Route exact path="/book" component={Book} />  
             <Route exact pathe="/404" component={NoMatch} />
           </Switch>
-          {/* <Footer2></Footer2> */}
+           <Footer></Footer> 
         </Router>
       </div>
      

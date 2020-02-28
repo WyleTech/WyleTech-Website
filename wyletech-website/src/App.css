@@ -112,8 +112,13 @@
 
 /* BUTTON GLOW ON HOVER---------END */
 
-/*  JumboTron2 Background Image */
+/*  JumboTron1 Background Image */
+.Home-Jumbotron-1 {
+  margin-top: 20px;
+  background-image: url("./images/code2.jpg");
+  background-size: auto 100%;
 
+}
 
 /*  JumboTron2 Background Image */
   .Home-Jumbotron-2 {
@@ -121,5 +126,27 @@
     background-image: url("./images/build.jpg");
     background-size: auto 100%;
   
+  }
+
+
+/* Payment Plan (Footer) */
+.Payment-Plan {
+  color: #D7b740;
+  font-style: italic; 
+  font-size: 13px;
+}   
+/* Responsive Payment Plan (Footer) */
+@media screen and (max-width: 768px) {
+  .Payment-Plan, .Secure-Site {
+    font-size: 10px;
+  }
+}
+
+footer {
+  position: sticky;
+    left:0;
+    bottom:0;
+    right:0;
+    width: 100%;
   }
   
