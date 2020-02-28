@@ -20,7 +20,7 @@ class Home extends React.Component {
       <Jumbotron className="Home-Jumbotron-1 bg-info text-white">
   <h1>Wyle-Tech Software Solutions</h1>
   <p>
-  Our talented, fully in-house, 2+ team of US-based, software developers create software products, apps, and any other software solutions to accomodate your business needs. 
+  Our talented, fully in-house, team of US-based, software developers create software products, apps, and any other software solutions to accomodate your business needs. 
   </p>
   <p>
   <Link to="/book">
@@ -38,7 +38,7 @@ class Home extends React.Component {
    
    {/* <img className="code-img img-thumbnail float-left max-width: 100px " src="../images/code.jpg" alt="Responsive image" ></img> */}
   
-  <h1>Let Us Build it for you!</h1>
+  <h1>Let US build it for YOU!</h1>
 
   <p>
    Let us handle your project!
