@@ -111,3 +111,15 @@
 }
 
 /* BUTTON GLOW ON HOVER---------END */
+
+/*  JumboTron2 Background Image */
+
+
+/*  JumboTron2 Background Image */
+  .Home-Jumbotron-2 {
+    margin-top: 20px;
+    background-image: url("./images/build.jpg");
+    background-size: auto 100%;
+  
+  }
+  
