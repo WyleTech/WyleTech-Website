@@ -6,9 +6,9 @@ import React from "react";
 
 const About = () => (
   <React.Fragment>
-    <header className="page-header">
-      <h1 className="About-Us-Title text-danger mx-auto text-center col-lg-9 my-5"> About Wyle-Tech </h1>
-      <p className="About-Content text-center text-danger"> So Fresh and so CLEAN CLEAN!!</p>
+    <header className="page-header">t
+      <h1 className="About-Us-Title mx-auto text-center col-lg-9 my-5"> Two dedicated Software Developers </h1>
+      <p className="About-Content text-center text-danger"> A pair of very passionate software developers.</p>
     </header>
 
   </React.Fragment>
