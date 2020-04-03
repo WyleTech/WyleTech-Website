@@ -118,7 +118,6 @@
   background-image: url("./images/code2.jpg");
   background-size: auto 100%;
   
-
 }
 
 /*  JumboTron2 Background Image */
@@ -128,6 +127,15 @@
     background-size: auto 100%;
   
   }
+
+  /*  JumboTron3 Background Image */
+.Home-Jumbotron-3 {
+  margin-top: 20px;
+  background-image: url("./images/Multitask.svg");
+  background-size: auto 100%;
+  
+}
+
 
 /* -------PRESENTLY NOT WORKING? START--------- */
 /* // Small devices (landscape phones, 576px and up) */
@@ -240,11 +248,6 @@ transition: all 250ms ease-in-out 0s;
 
 }
 
-.About-Us-Title{
-
-  color: #ff8d1e;
-}
-
 /* NAVBAR  */
 @import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
 .navbar-brand {
@@ -262,4 +265,91 @@ transition: all 250ms ease-in-out 0s;
 .navbar-inverse {
   background-color: #003300
 }
+
+/* ABOUT US STYLING:  */
+
+.About-Body {
+  background-color: #222222;
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
+
+.Body-P {
+  text-align: center;
+  font-size: 7em;
+  margin: 20px 0 20px 0;
+}
+
+.Body-A {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Body-P, .Body-A {
+  color: #FF9900;
+  font-family: Audiowide;
+}
+
+.Body-P .Body-A:hover {
+  -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+  animation: neon5 1.5s ease-in-out infinite alternate;
+}
+
+.Body-P .Body-A:hover {
+  color: #ffffff;
+}
+
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+@-moz-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+@media (max-width: 650px) {
+  #container {
+    width: 100%;
+  }
+  .Body-P {
+    font-size: 3.5em;
+  }
+}
+
+/* About US IMAGES  */
+.Phone-App, .Cozy {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  margin-left: 10px;
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
 

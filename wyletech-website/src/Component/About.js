@@ -1,4 +1,8 @@
 import React from "react";
+import Image from 'react-bootstrap/Image'
+import Jumbotron from 'react-bootstrap/Jumbotron'
+import PhoneApp from '../images/PhoneApp.jpg'
+import Cozy from '../images/Cozy.jpg'
 // import { Link } from "react-router-dom";
 // import CardGroup from "react-bootstrap/CardGroup";
 // import Card from 'react-bootstrap/Card';
@@ -6,11 +10,21 @@ import React from "react";
 
 const About = () => (
   <React.Fragment>
-    <header className="page-header">t
-      <h1 className="About-Us-Title mx-auto text-center col-lg-9 my-5"> Two dedicated Software Developers </h1>
-      <p className="About-Content text-center text-danger"> A pair of very passionate software developers.</p>
-    </header>
+    <body className="About-Body">
+    <header className="page-header">
+      {/* <h1 className="About-Us-Title mx-auto text-center col-lg-9 my-5"> A couple of creative, dedicated Software Engineers working to master our craft </h1> */}
+      <p className="Body-P"><a className="Body-A" href="">
+      Creative Software Engineers
+      <img className="Phone-App" src={PhoneApp} alt="PhoneApp.jpg"/>
+      <img className="Cozy" src={Cozy} alt="Cozy.jpg"/>
+  </a></p>
+ 
 
+  <Jumbotron className="Home-Jumbotron-3 bg-info text-white">
+</Jumbotron>
+
+    </header>
+    </body>
   </React.Fragment>
 );
 
