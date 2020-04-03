@@ -29,12 +29,6 @@ class Home extends React.Component {
  {/* React/Bootstrap JumboTron#2 - homepage */}
  <Jumbotron className="Home-Jumbotron-2  text-right container-fluid ">
 
- {/* <Col xs={6} md={4}>
-  <Image className="code-img" src="../images/code.jpg" rounded />
-  </Col> */}
-   
-   {/* <img className="code-img img-thumbnail float-left max-width: 100px " src="../images/code.jpg" alt="Responsive image" ></img> */}
-  
   <h1>Let US build it for YOU!</h1>
 
   <p>

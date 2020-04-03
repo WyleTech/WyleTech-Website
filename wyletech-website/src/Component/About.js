@@ -3,10 +3,6 @@ import Image from 'react-bootstrap/Image'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import PhoneApp from '../images/PhoneApp.jpg'
 import Cozy from '../images/Cozy.jpg'
-// import { Link } from "react-router-dom";
-// import CardGroup from "react-bootstrap/CardGroup";
-// import Card from 'react-bootstrap/Card';
-// import Table from "react-bootstrap/Table";
 
 const About = () => (
   <React.Fragment>
