@@ -12,7 +12,7 @@ const About = () => (
       <p className="Body-P"><a className="Body-A" href="">
       Creative Software Engineers
       <img className="Phone-App" src={PhoneApp} alt="PhoneApp.jpg"/>
-      <img className="Cozy" src={Cozy} alt="Cozy.jpg"/>
+      <img className="Cozy" src={{Cozy}} alt="Cozy.jpg"/>
   </a></p>
  
 
