@@ -13,7 +13,7 @@ const About = () => (
       Creative Software Engineers </a>
 
   <img className="Phone-App" src={PhoneApp} alt="PhoneApp.jpg"/>
-  <img className="Cozy" src={{Cozy}} alt="Cozy.jpg"/>
+  <img className="Cozy" src={Cozy} alt="Cozy.jpg"/>
   
       </p>
  

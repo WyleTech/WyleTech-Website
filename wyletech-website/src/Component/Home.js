@@ -17,7 +17,7 @@ class Home extends React.Component {
       <Jumbotron className="Home-Jumbotron-1 bg-info text-white">
   <h1 className="Home-WyleTech">Wyle-Tech Software Solutions</h1>
   <p className="Home-page-about">
-  Our talented, fully in-house, team of US-based,software developers<br></br>  create software products, applications,  <br></br>and any other software solutions to accomodate your business needs. 
+  Our talented, fully in-house, team of US-based, software developers<br></br>  create software products, applications, and any other<br></br> software solutions to accomodate your business needs. 
 
 <p>
 <br></br>
