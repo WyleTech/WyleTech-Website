@@ -49,6 +49,10 @@
   text-align: right;
 }
 
+.Home-page-let-us {
+  text-align: left;
+}
+
 /* Nav Button Hover Border */
 .nav-link:hover {
   border-bottom:1px solid #ff8d1e;
@@ -60,7 +64,7 @@
 }
 
 /* BUTTON GLOW ON HOVER---------START */
-.glow-on-hover {
+.glow-on-hover, .glow-on-hover-2 {
   width: 220px;
   height: 50px;
   border: none;
@@ -73,7 +77,7 @@
   border-radius: 10px;
 }
 
-.glow-on-hover:before {
+.glow-on-hover:before, .glow-on-hover-2:before {
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
@@ -91,19 +95,19 @@
   
 }
 
-.glow-on-hover:active {
+.glow-on-hover:active, .glow-on-hover-2:active {
   color: #000
 }
 
-.glow-on-hover:active:after {
+.glow-on-hover:active:after, .glow-on-hover-2:active:after {
   background: transparent;
 }
 
-.glow-on-hover:hover:before {
+.glow-on-hover:hover:before, .glow-on-hover-2:hover:before {
   opacity: 1;
 }
 
-.glow-on-hover:after {
+.glow-on-hover:after, .glow-on-hover-2:after {
   z-index: -1;
   content: '';
   position: absolute;
@@ -121,6 +125,7 @@
   100% { background-position: 0 0; }
 }
 
+
 /* BUTTON GLOW ON HOVER---------END */
 
 /*  JumboTron1 Background Image */
@@ -134,20 +139,14 @@
 
 /*  JumboTron2 Background Image */
   .Home-Jumbotron-2 {
-    margin-top: 20px;
-    background-image: url("./images/build.jpg");
+    margin-top: 30px;
+    background-image: url("./images/CompEngineerin.jpg");
     background-size: auto 100%;
-  
+    background-repeat: no-repeat; 
+    padding: 100px;
+    background-position: right;
+
   }
-
-  /*  JumboTron3 Background Image */
-.Home-Jumbotron-3 {
-  margin-top: 20px;
-  background-image: url("./images/Multitask.svg");
-  background-size: auto 100%;
-  
-}
-
 
 /* -------PRESENTLY NOT WORKING? START--------- */
 /* // Small devices (landscape phones, 576px and up) */

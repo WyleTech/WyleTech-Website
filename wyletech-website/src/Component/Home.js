@@ -31,17 +31,17 @@ class Home extends React.Component {
   </p>
 </Jumbotron>
  {/* React/Bootstrap JumboTron#2 - homepage */}
- <Jumbotron className="Home-Jumbotron-2  text-right container-fluid ">
+ <Jumbotron className="Home-Jumbotron-2 bg-info text-left">
 
-  <h1>Let US build it for YOU!</h1>
+  <h1 className="Home-page-let-us">Let US build it for YOU!</h1>
 
-  <p>
+  <p className="Home-page-let-us">
    Let us handle your project!
   </p>
   
   <p>
   <Link to="/book">
-    <Button className="glow-on-hover">Book Our Services</Button>
+    <Button className="glow-on-hover-2">Book Our Services</Button>
     </Link>
   </p>
 </Jumbotron>
