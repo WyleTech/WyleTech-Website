@@ -40,17 +40,27 @@
 	HOME PAGE START
 ====================== */
 
-.Home-WyleTech {
-  text-align: right;
+.Jumbo-Title-1, .Jumbo-Title-2  {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
   text-decoration: underline;
+
 }
 
-.Home-page-about {
+.Content-1, .Content-2  {
+  
+ 
+  
+}
+
+.Jumbo-Title-1, .Content-1 {
   text-align: right;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.Home-page-let-us {
+.Jumbo-Title-2, .Content-2 {
   text-align: left;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Nav Button Hover Border */
@@ -141,6 +151,13 @@
     background-repeat: no-repeat; 
     padding: 100px;
     background-position: right;
+  }
+/*  JumboTron3 Background Image */
+  .Home-Jumbotron-3 {
+    margin-top: 20px;
+    background-image: url("./images/CompEngineerin.jpg" );
+    background-size: auto 100%;
+    
   }
 
 /* -------PRESENTLY NOT WORKING RESPONSIVE JUMBOTRONS? START--------- */
@@ -364,10 +381,25 @@ transition: all 250ms ease-in-out 0s;
   max-width: 100%;
   height: auto;
 }
+
+
+
 /*==================== 
 	ABOUT US PAGE END
 ====================== */
 
+/*==================== 
+	PROJECTS PAGE BEGINNING
+====================== */
+.Project-names {
+  font-weight: bold;
+  font-size: 40px; 
+  color: #FF9900;
 
+}
 
-
+.Card-Titles {
+  font-weight: bold;
+  font-size: 30px; 
+  color: black;
+}

@@ -18,9 +18,9 @@ const Projects = () => (
   <Card>
     <Card.Img variant="top" src={ReactLogo} style= {{height: 500}}/>
     <Card.Body>
-      <Card.Title>React and Java Build</Card.Title>
+      <Card.Title className="Card-Titles text-center">React and Java Build</Card.Title>
       <Card.Text> 
-        <a href=
+        <a className="Project-names" href=
       "http://gcufoodtruck.us-west-1.elasticbeanstalk.com/"> Ril Dil BBQ
         </a>
       </Card.Text>
@@ -28,11 +28,11 @@ const Projects = () => (
 
   </Card>
   <Card>
-    <Card.Img variant="top" src={AngularLogo} style= {{height: 500}}/>
+    <Card.Img  variant="top" src={AngularLogo} style= {{height: 500}} />
     <Card.Body>
-      <Card.Title>Angular Build with API consumption</Card.Title>
+      <Card.Title className="Card-Titles" >Angular Build with API consumption</Card.Title>
       <Card.Text>
-      <a href=
+      <a className="Project-names" href=
       "http://name-game.us-west-1.elasticbeanstalk.com/aboutUs"> Name Game
         </a>
       </Card.Text>
