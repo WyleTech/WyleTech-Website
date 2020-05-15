@@ -2,9 +2,9 @@ import React from "react";
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
-import Image from 'react-bootstrap/Image'
 import Container from 'react-bootstrap/Container'
-import Col from 'react-bootstrap/Col'
+import STEM from '../images/STEM.jpg'
+
 
 class Home extends React.Component {
  
@@ -16,16 +16,20 @@ class Home extends React.Component {
       {/* React/Bootstrap JumboTron - homepage */}
       <Jumbotron className="Home-Jumbotron-1 bg-info text-white">
   <h1 className="Home-WyleTech">Wyle-Tech Software Solutions</h1>
-  <p>
-  Our talented, fully in-house, team of US-based, software developers create software products, apps, and any other software solutions to accomodate your business needs. 
-  </p>
-  <p>
+  <p className="Home-page-about">
+  Our talented, fully in-house, team of US-based,software developers<br></br>  create software products, applications,  <br></br>and any other software solutions to accomodate your business needs. 
+
+<p>
+<br></br>
   <Link to="/book">
     <Button className="glow-on-hover">Book Our Services</Button>
     </Link>
+    </p>
+  </p>
+  <p>
+ 
   </p>
 </Jumbotron>
-
  {/* React/Bootstrap JumboTron#2 - homepage */}
  <Jumbotron className="Home-Jumbotron-2  text-right container-fluid ">
 

@@ -38,6 +38,17 @@
   }
 }
 
+/*<<<<<<<<HOME PAGE STYLING >>>>>>*/
+
+.Home-WyleTech {
+  text-align: right;
+  text-decoration: underline;
+}
+
+.Home-page-about {
+  text-align: right;
+}
+
 /* Nav Button Hover Border */
 .nav-link:hover {
   border-bottom:1px solid #ff8d1e;
@@ -115,8 +126,9 @@
 /*  JumboTron1 Background Image */
 .Home-Jumbotron-1 {
   margin-top: 20px;
-  background-image: url("./images/code2.jpg");
+  background-image: url("./images/STEM.jpg");
   background-size: auto 100%;
+  background-repeat: no-repeat; 
   
 }
 
@@ -272,31 +284,31 @@ transition: all 250ms ease-in-out 0s;
   background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
 }
 
-.Body-P {
+.Body-P, .About-Us-Title {
   text-align: center;
   font-size: 7em;
   margin: 20px 0 20px 0;
 }
 
-.Body-A {
+.Body-A, .About-Us-Title {
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.Body-P, .Body-A {
+.Body-P, .Body-A, .About-Us-Title {
   color: #FF9900;
   font-family: Audiowide;
 }
 
-.Body-P .Body-A:hover {
+.Body-P .Body-A:hover, .About-Us-Title:hover {
   -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
   -moz-animation: neon5 1.5s ease-in-out infinite alternate;
   animation: neon5 1.5s ease-in-out infinite alternate;
 }
 
-.Body-P .Body-A:hover {
+.Body-P .Body-A:hover, , .About-Us-Title:hover {
   color: #ffffff;
 }
 
