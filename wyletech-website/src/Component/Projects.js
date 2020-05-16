@@ -9,11 +9,9 @@ import AngularLogo from '../images/Angular.png';
 
 const Projects = () => (
   <React.Fragment>
-    <header className="page-header">
-      {/* <h1 className="About-Us-Title mx-auto text-center col-lg-9 my-5"> Work we've done </h1> */}
-     <h1> <div class="knockout"><a href="" rel="">Our Creations</a></div></h1>
-      
-    </header>
+     <body className="Projects-Body">
+     <header className="App-header">
+     <h1 className="Our-Creations-Title">Our Creations</h1>
 
     {/* React Bootstrap Project examples */}
     <CardDeck>
@@ -56,6 +54,9 @@ const Projects = () => (
 
   </Card>
 </CardDeck>
+</header>
+</body>
+
   </React.Fragment>
 );
 

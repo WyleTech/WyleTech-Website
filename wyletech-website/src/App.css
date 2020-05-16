@@ -257,7 +257,7 @@ transition: all 250ms ease-in-out 0s;
 /*==================== 
 	ABOUT US PAGE START
 ====================== */
-.About-Body {
+.About-Body, .Projects-Body {
   background-color: #222222;
   background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
 }
@@ -347,7 +347,7 @@ transition: all 250ms ease-in-out 0s;
 	PROJECTS PAGE BEGINNING
 ====================== */
 
-.knockout {
+.Our-Creations-Title {
   background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
   color: red;
   -webkit-text-fill-color: transparent;
