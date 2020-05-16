@@ -47,12 +47,6 @@
 
 }
 
-.Content-1, .Content-2  {
-  
- 
-  
-}
-
 .Jumbo-Title-1, .Content-1 {
   text-align: right;
   font-family: 'Montserrat', sans-serif;
@@ -62,6 +56,30 @@
   text-align: left;
   font-family: 'Montserrat', sans-serif;
 }
+
+/*  JumboTron1 Background Image */
+.Home-Jumbotron-1 {
+  margin-top: 20px;
+  background-image: url("./images/STEM.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat; 
+}
+/*  JumboTron2 Background Image */
+  .Home-Jumbotron-2 {
+    margin-top: 30px;
+    background-image: url("./images/CompEngineerin.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat; 
+    padding: 100px;
+    background-position: right;
+  }
+/*  JumboTron3 Background Image */
+  .Home-Jumbotron-3 {
+    margin-top: 20px;
+    background-image: url("./images/CompEngineerin.jpg" );
+    background-size: auto 100%;
+    
+  }
 
 /* Nav Button Hover Border */
 .nav-link:hover {
@@ -135,30 +153,6 @@
   100% { background-position: 0 0; }
 }
 /* Book Us - Home Page - BUTTON -  GLOW ON HOVER---------END */
-
-/*  JumboTron1 Background Image */
-.Home-Jumbotron-1 {
-  margin-top: 20px;
-  background-image: url("./images/STEM.jpg");
-  background-size: auto 100%;
-  background-repeat: no-repeat; 
-}
-/*  JumboTron2 Background Image */
-  .Home-Jumbotron-2 {
-    margin-top: 30px;
-    background-image: url("./images/CompEngineerin.jpg");
-    background-size: auto 100%;
-    background-repeat: no-repeat; 
-    padding: 100px;
-    background-position: right;
-  }
-/*  JumboTron3 Background Image */
-  .Home-Jumbotron-3 {
-    margin-top: 20px;
-    background-image: url("./images/CompEngineerin.jpg" );
-    background-size: auto 100%;
-    
-  }
 
 /* -------PRESENTLY NOT WORKING RESPONSIVE JUMBOTRONS? START--------- */
 /* // Small devices (landscape phones, 576px and up) */
@@ -307,31 +301,31 @@ transition: all 250ms ease-in-out 0s;
   background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
 }
 
-.Body-P, .About-Us-Title {
+.Body-P {
   text-align: center;
   font-size: 7em;
   margin: 20px 0 20px 0;
 }
 
-.Body-A, .About-Us-Title {
+.Body-A {
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.Body-P, .Body-A, .About-Us-Title {
+.Body-P, .Body-A {
   color: #FF9900;
   font-family: Audiowide;
 }
 
-.Body-P .Body-A:hover, .About-Us-Title:hover {
+.Body-P .Body-A:hover {
   -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
   -moz-animation: neon5 1.5s ease-in-out infinite alternate;
   animation: neon5 1.5s ease-in-out infinite alternate;
 }
 
-.Body-P .Body-A:hover, .About-Us-Title:hover {
+.Body-P .Body-A:hover {
   color: #ffffff;
 }
 
@@ -391,6 +385,24 @@ transition: all 250ms ease-in-out 0s;
 /*==================== 
 	PROJECTS PAGE BEGINNING
 ====================== */
+
+.knockout {
+  background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-size: 150px;
+  font-family: 'Arvo', serif;
+  width: 1550px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+body{
+  background: #444;
+}
+
 .Project-names {
   font-weight: bold;
   font-size: 40px; 

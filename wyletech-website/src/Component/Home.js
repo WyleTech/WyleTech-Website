@@ -33,15 +33,15 @@ class Home extends React.Component {
  {/* React/Bootstrap JumboTron#2 - homepage */}
  <Jumbotron className="Home-Jumbotron-2 bg-info text-left">
 
-  <h1 className="Jumbo-Title-2">Let US build it for YOU!</h1>
+  <h1 className="Jumbo-Title-2">Let <b>US</b> build it for <b>YOU</b>!</h1>
 
   <p className="Content-2">
-   Let us handle your project!
+   Check out our previous clients and projects.
   </p>
   
   <p>
-  <Link to="/book">
-    <Button className="glow-on-hover-2">Book Our Services</Button>
+  <Link to="/projects">
+    <Button className="glow-on-hover-2">Previous Projects</Button>
     </Link>
   </p>
 </Jumbotron>
