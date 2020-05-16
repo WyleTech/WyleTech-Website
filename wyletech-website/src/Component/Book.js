@@ -3,6 +3,7 @@ import axios from "axios";
 import "../App.css";
 
 export default class Book extends React.Component {
+
   state = {
     first_name: "",
     last_name: "",
@@ -39,7 +40,18 @@ export default class Book extends React.Component {
   };
   render() {
     return (
+      
+      // Book Us Title - animation
       <div class="container ">
+           <div class="foo">
+      <span class="letter" data-letter="B">B</span>
+      <span class="letter" data-letter="O">O</span>
+      <span class="letter" data-letter="O">O</span>
+      <span class="letter" data-letter="K">K &nbsp;</span>
+      <span class="letter" data-letter="U">U</span>
+      <span class="letter" data-letter="S">S</span>
+      </div>
+      
         <header className="Form">
           <form onSubmit={this.handleSubmit}>
             {/* First Name Form */}

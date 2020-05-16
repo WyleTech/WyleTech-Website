@@ -22,7 +22,7 @@ const Projects = () => (
     <Card.Body>
       <Card.Title className="Card-Titles text-center">React and Java Build</Card.Title>
       <Card.Text> 
-        <a className="Project-names" href=
+        <a className="Project-names text-info" href=
       "http://gcufoodtruck.us-west-1.elasticbeanstalk.com/"> Ril Dil BBQ
         </a>
       </Card.Text>
@@ -34,7 +34,7 @@ const Projects = () => (
     <Card.Body>
       <Card.Title className="Card-Titles" >Angular Build with API consumption</Card.Title>
       <Card.Text>
-      <a className="Project-names" href=
+      <a className="Project-names text-danger" href=
       "http://name-game.us-west-1.elasticbeanstalk.com/aboutUs"> Name Game
         </a>
       </Card.Text>
@@ -44,11 +44,13 @@ const Projects = () => (
   <Card>
     <Card.Img variant="top" src="holder.js/100px160" />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title className="Card-Titles">Preceptor-Point Site Build</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
+
+      <a className="Project-names text-danger" href=
+      "http://www.preceptorpoint.com"> Preceptor-Point
+        </a>
+     Site build for Preceptor-point including React/Bootstrap styling, MYSQL RDS Database on AWS, React form-validation, and Java Backend. 
       </Card.Text>
     </Card.Body>
 
