@@ -140,9 +140,18 @@ export default class Book extends React.Component {
               >
                 Submit!
               </button>
+          
             </div>
           </form>
+          <br></br>
+          <p className="Email text-center text-white">Or just go ahead and shoot us an email real quick! 
+        <li> <a href="mailto:programmerBill.wyletech@gmail.com">ProgrammerBill.Wyletech@gmail.com</a></li>
+        <li> <a href="mailto:squirrelMaster.wyletech@gmail.com">SquirrelMaster.Wyletech@gmail.com</a></li>
+        
+        </p>
         </header>
+
+     
       </div>
     );
   }

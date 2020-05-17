@@ -15,7 +15,7 @@ const Projects = () => (
       <h1 className="Creations-Title">Our Creations</h1>
       {/* React Bootstrap Project examples */}
       <CardDeck >
-        <Card className="Card-1 bg-primary">
+        <Card className="Card-1 bg-info">
           <br></br>
           <Card.Img variant="top" src={RilDilSnip} style={{ height: 250, width: 610 }} />
           <p className="Ril-Dil-Card-Description text-center font-weight-bold">Ril Dil Food-Truck Website - Build with Menu, Google Maps API for Food Truck Locator, Menu Photos Carousel, Form for Client Booking, admin login for Food-Truck Owner to acitvely add/remove menu items and maintain database of client bookings. </p>
@@ -30,7 +30,7 @@ const Projects = () => (
           </Card.Body>
 
         </Card >
-        <Card className="Card-2 bg-primary">
+        <Card className="Card-2 bg-info">
           <br></br>
           <Card.Img variant="top" src={NameGame} style={{ height: 250, width: 610 }} />
           <br></br>
@@ -44,7 +44,7 @@ const Projects = () => (
             </Card.Text>
           </Card.Body>
         </Card>
-        <Card className="Card-3 bg-primary">
+        <Card className="Card-3 bg-info">
           <Card.Img variant="top" />
           <Card.Body>
             <Card.Title className="Card-Titles">Check out our Github</Card.Title>
