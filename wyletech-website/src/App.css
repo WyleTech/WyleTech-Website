@@ -336,9 +336,6 @@ transition: all 250ms ease-in-out 0s;
   max-width: 100%;
   height: auto;
 }
-
-
-
 /*==================== 
 	ABOUT US PAGE END
 ====================== */
@@ -346,11 +343,14 @@ transition: all 250ms ease-in-out 0s;
 /*==================== 
 	PROJECTS PAGE BEGINNING
 ====================== */
-
 Body {
   background: #252525
 }
 
+.Ril-Dil-Card-Description {
+  font-size: 21px;
+  font-family: Copperplate;  
+}
 
 .Our-Creations-Title {
   background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
@@ -365,7 +365,6 @@ Body {
   text-align: center;
 }
 
-
 .Project-names {
   font-weight: bold;
   font-size: 40px; 
@@ -375,7 +374,7 @@ Body {
 
 .Card-Titles {
   font-weight: bold;
-  font-size: 30px; 
+  font-size: 25px; 
   color: black;
 }
 
