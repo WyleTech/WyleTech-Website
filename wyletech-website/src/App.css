@@ -347,6 +347,11 @@ transition: all 250ms ease-in-out 0s;
 	PROJECTS PAGE BEGINNING
 ====================== */
 
+Body {
+  background: #252525
+}
+
+
 .Our-Creations-Title {
   background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
   color: red;
@@ -360,9 +365,6 @@ transition: all 250ms ease-in-out 0s;
   text-align: center;
 }
 
-body{
-  background: #444;
-}
 
 .Project-names {
   font-weight: bold;
