@@ -12,7 +12,7 @@ import NameGame from '../images/NameGame.jpg';
 const Projects = () => (
   <React.Fragment>
     <body className="Projects-Body ">
-      <h1 className="Our-Creations-Title">Our Creations</h1>
+      <h1 className="Creations-Title">Our Creations</h1>
       {/* React Bootstrap Project examples */}
       <CardDeck >
         <Card className="Card-1 bg-primary">

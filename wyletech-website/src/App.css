@@ -352,16 +352,13 @@ Body {
   font-family: Copperplate;  
 }
 
-.Our-Creations-Title {
+.Creations-Title {
   background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
   color: red;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-weight: bold;
-  font-size: 150px;
   font-family: 'Arvo', serif;
-  width: 1550px;
-  margin: 50px auto;
   text-align: center;
 }
 
@@ -398,17 +395,17 @@ Book US Beginning
 }
 body{
   font-family: 'Lato', sans-serif;
-    ;
 }
-div.foo{
+
+div.Book{
   width: 90%;
   margin: 0 auto;
   text-align: center;
 }
+
 .letter{
   display: inline-block;
   font-weight: 900;
-  font-size: 8em;
   margin: 0.2em;
   position: relative;
   color: #00B4F1;
@@ -416,6 +413,7 @@ div.foo{
   perspective: 400;
   z-index: 1;
 }
+
 .letter:before, .letter:after{
   position:absolute;
   content: attr(data-letter);
@@ -423,9 +421,11 @@ div.foo{
   top:0;
   left:0;
 }
+
 .letter, .letter:before, .letter:after{
   transition: all 0.3s ease-in-out;
 }
+
 .letter:before{
   color: #fff;
   text-shadow: 
@@ -437,6 +437,7 @@ div.foo{
     rotateY(-15deg)
     rotateZ(0deg);
 }
+
 .letter:after{
   color: rgba(0,0,0,.11);
   z-index:2;
@@ -447,6 +448,7 @@ div.foo{
     rotateZ(0deg)
     skew(0deg,1deg);
 }
+
 .letter:hover:before{
   color: #fafafa;
   transform:
@@ -454,6 +456,7 @@ div.foo{
     rotateY(-40deg)
     rotateZ(0deg);
 }
+
 .letter:hover:after{
   transform:
     scale(1.08,1)
@@ -464,17 +467,46 @@ div.foo{
 }
 
 /* Book Us Title Responsive Design */
-@media (max-width: 767px) {                  
-  .foo {
-    font-size: 7px; 
+/* @media (max-width: 767px) {                  
+  .Book {
+    font-size: 6px; 
   }
 }
 
 @media (min-width: 992px) {                  
-  .foo {
-    font-size: 15px; 
+  .Book {
+    font-size: 8px; 
+  }
+} */
+
+@media (max-width: 576px) { 
+  .Book, .Creations-Title {
+   font-size: 3em;;
+ }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .Book, .Creations-Title {
+ font-size: 4em;; 
   }
 }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+  .Book, .Creations-Title {
+ font-size: 6em;; 
+ }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  .Book, .Creations-Title {
+ font-size: 8em;;
+ }
+}
+
+
 /* BOOK US TITLE STYLING END */
 
 

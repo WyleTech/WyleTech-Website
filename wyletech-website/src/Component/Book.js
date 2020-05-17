@@ -43,7 +43,7 @@ export default class Book extends React.Component {
       
       // Book Us Title - animation
       <div class="container ">
-           <div class="foo">
+           <div class="Book">
       <span class="letter" data-letter="B">B</span>
       <span class="letter" data-letter="O">O</span>
       <span class="letter" data-letter="O">O</span>
