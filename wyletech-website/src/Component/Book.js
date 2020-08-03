@@ -1,10 +1,15 @@
 import React from "react";
 import axios from "axios";
 import "../App.css";
+import { gapi } from 'gapi-script';
 
 export default class Book extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.initClient = this.initClient.bind(this);
 
-  state = {
+  this.state = {
     first_name: "",
     last_name: "",
     organization_name: "",
@@ -12,6 +17,35 @@ export default class Book extends React.Component {
     phone: "",
     description_of_request: ""
   };
+  }
+
+  componentDidMount() {
+
+    this.handleClientLoad();
+  }
+
+  handleClientLoad = () => {
+    gapi.load('client:auth2', this.initClient)
+  }
+
+   initClient = () => {
+     var API_KEY = 'AIzaSyA7L8zrgabqUFC73Au0L3wZlJpycKZvsFo';
+     var CLIENT_ID = '696246206874-c607j5fh9n9lpk6tfvrsiubmairiqml2.apps.googleusercontent.com';
+     //var CLIENT_SECRET = 'aVHoCdrN-HGghXSZJYY_etK0';
+     var SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
+
+     gapi.client.init({
+       'apiKey': API_KEY,
+       'clientId': CLIENT_ID,
+       'scpoe': SCOPE,
+       'discoveryDocs': ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+     })
+      // .then(() => {
+      //   gapi.auth2.getAuthInstance().isSignedIn.Listen(this.updateSignInStatus);
+      //   this.updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+      // })
+    }
+ 
 
   handleAlert = () => {
     alert(
@@ -20,43 +54,69 @@ export default class Book extends React.Component {
   };
 
   handleSubmit = event => {
+    // need to add api key from google vredentials before launching live 
+    console.log(this.state);
+    var SPREADSHEET_ID = '1Ja2iCJz1zENn5rQAY5rTIyQW4XGWUNs2hj4QiAWYDo0';
+    
+
+    var params = {
+      spreadsheetID: SPREADSHEET_ID,
+      range: 'Leads',
+      valueInputOptions: 'raw',
+      insertDataOption: 'INSERT_ROWS',
+    }
+    
+    var valueRangeBody = {
+      'majorDimensions': 'ROWS',
+      'values': [this.state],
+    }
+
+    let request = gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody);
+    request.then(function(response) {
+      alert('You\'re information has been received')
+      console.log(response.result)
+    }, function(reason) {
+      alert('An error occured ' + reason.result.error.message);
+    });
+    
     event.preventDefault();
 
-    console.log(event.target.elements[0].value);
-    console.log(event.target.elements[1].value);
-    console.log(event.target.elements[2].value);
-    console.log(event.target.elements[3].value);
-    console.log(event.target.elements[4].value);
-    console.log(event.target.elements[5].value);
-    axios.post(`http://localhost:8080/api/book`, {
-      first_name: event.target.elements[0].value,
-      last_name: event.target.elements[1].value,
-      organization_name: event.target.elements[2].value,
-      email: event.target.elements[3].value,
-      phone: event.target.elements[4].value,
-      description_of_request: event.target.elements[5].value,
+    // console.log(event.target.elements[0].value);
+    // console.log(event.target.elements[1].value);
+    // console.log(event.target.elements[2].value);
+    // console.log(event.target.elements[3].value);
+    // console.log(event.target.elements[4].value);
+    // console.log(event.target.elements[5].value);
+    // axios.post(`http://localhost:8080/api/book`, {
+    //   first_name: event.target.elements[0].value,
+    //   last_name: event.target.elements[1].value,
+    //   organization_name: event.target.elements[2].value,
+    //   email: event.target.elements[3].value,
+    //   phone: event.target.elements[4].value,
+    //   description_of_request: event.target.elements[5].value,
 
-    });
+    // });
   };
+
   render() {
     return (
       
       // Book Us Title - animation
-      <div class="container ">
-           <div class="Book">
-      <span class="letter" data-letter="B">B</span>
-      <span class="letter" data-letter="O">O</span>
-      <span class="letter" data-letter="O">O</span>
-      <span class="letter" data-letter="K">K &nbsp;</span>
-      <span class="letter" data-letter="U">U</span>
-      <span class="letter" data-letter="S">S</span>
+      <div className="container ">
+           <div className="Book">
+      <span className="letter" data-letter="B">B</span>
+      <span className="letter" data-letter="O">O</span>
+      <span className="letter" data-letter="O">O</span>
+      <span className="letter" data-letter="K">K &nbsp;</span>
+      <span className="letter" data-letter="U">U</span>
+      <span className="letter" data-letter="S">S</span>
       </div>
       
         <header className="Form">
           <form onSubmit={this.handleSubmit}>
             {/* First Name Form */}
             <div className="form-row text-white-50 ">
-            <div class="col-md-4">
+            <div className="col-md-4">
               <label htmlFor="exampleInputFirstName">First Name</label>
               <input
                 type="name"
@@ -67,7 +127,7 @@ export default class Book extends React.Component {
               />
           
           </div>
-          <div class="col-md-4 ">
+          <div className="col-md-4 ">
             {/* Last Name Form */}
         
               <label htmlFor="exampleInputLastName">Last Name</label>
@@ -79,7 +139,7 @@ export default class Book extends React.Component {
               />
                </div>
 
-               <div class="col-md-4 ">
+               <div className="col-md-4 ">
             {/* Last Name Form */}
         
               <label htmlFor="exampleInputLastName">Organization Name</label>
@@ -94,7 +154,7 @@ export default class Book extends React.Component {
         
             {/* Email Form */}
             <div className="form-row text-white-50 ">
-            <div class="col-md-4 ">
+            <div className="col-md-4 ">
               <label htmlFor="exampleInputEmail1">Email</label>
               <input
                 type="email"
@@ -105,7 +165,7 @@ export default class Book extends React.Component {
               />
             </div>
             {/* Phone Number Form */}
-            <div class="col-md-4 ">
+            <div className="col-md-4 ">
             <div className="form-group text-white-50 ">
                 <label htmlFor="inputZip">Phone Number</label>
                 <input
@@ -136,7 +196,7 @@ export default class Book extends React.Component {
               <button
                 type="submit"
                 className="glow-on-hover btn-lg btn-success"
-                onClick={this.handleAlert}
+                onClick={this.handleSubmit}
               >
                 Submit!
               </button>
