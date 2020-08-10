@@ -16,6 +16,7 @@ const Projects = () => (
       <h1 className="Creations-Title">Our Creations</h1>
       {/* React Bootstrap Project examples */}
       <CardDeck >
+         {/* Card 1 */}
         <Card className="Card-1 bg-info">
           <br></br>
           <Card.Img variant="top" src={RilDilSnip} style={{ height: 250, width: 610 }} />
@@ -37,26 +38,36 @@ const Projects = () => (
           <Card.Body>
             <Card.Link href="#">Card Link</Card.Link>
           </Card.Body>
-{/* NOW!  */}
-
-
-
-
         </Card >
+
+        {/* Card 2 */}
         <Card className="Card-2 bg-info">
-          <br></br>
+        <br></br>
           <Card.Img variant="top" src={NameGame} style={{ height: 250, width: 610 }} />
+          <br></br>
+        
+          <Card.Body>
+             {/**CSS Card.Title note** won't style "className" (on CSS) like normal react, likely because it's a react/bootstrap listgroup - would only style under "class" */}
+            <Card.Title class= "Card-2-Title bg-dark text-white text-xl-center"><a href= "http://name-game.us-west-1.elasticbeanstalk.com/aboutUs"> Name Game </a></Card.Title> 
+            <Card.Text className= "bg-dark text-white text-center">
+              Tools: Angular Build with API consumption
+    </Card.Text>
+          </Card.Body>
+          <ListGroup className="list-group-flush bg-info">
+            <ListGroupItem className="bg-dark text-white">Angular </ListGroupItem>
+            <ListGroupItem className="bg-dark text-white">API Consumption</ListGroupItem>
+            <ListGroupItem className="bg-dark text-white"> add text </ListGroupItem>
+            <ListGroupItem className="bg-dark text-white"> add text </ListGroupItem>
+            <ListGroupItem className="bg-dark text-white"> add text </ListGroupItem>
+          </ListGroup>
           <br></br>
           <Card.Img variant="top" src={AngularApi} style={{ height: 250, width: 610 }} />
           <Card.Body>
-            <Card.Title className="Card-Titles" >"The Name Game" Angular Build with API consumption</Card.Title>
-            <Card.Text>
-              {/* <a className="Project-names text-danger" href=
-                "http://name-game.us-west-1.elasticbeanstalk.com/aboutUs"> Name Game
-              </a> */}
-            </Card.Text>
+            <Card.Link href="#"></Card.Link>
           </Card.Body>
-        </Card>
+        </Card >
+
+      {/* Card 3 */}
         <Card className="Card-3 bg-info">
           <Card.Img variant="top" />
           <Card.Body>

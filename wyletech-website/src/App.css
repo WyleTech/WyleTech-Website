@@ -347,7 +347,7 @@ Body {
   background: #252525
 }
 
-.Card-1-Title {
+.Card-1-Title, .Card-2-Title {
   font-size: 44px;
   font-family: Copperplate;  
 }
