@@ -258,8 +258,8 @@ transition: all 250ms ease-in-out 0s;
 	ABOUT US PAGE START
 ====================== */
 .About-Body {
-  background-color: #222222;
-  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+  background-color: #252525;
+  background: repeating-linear-gradient(45deg, #252525 0%, #252525 10%, #252525 0%, #252525 50%) 0 / 15px 15px;
 }
 
 .Body-P {
@@ -343,23 +343,13 @@ transition: all 250ms ease-in-out 0s;
 /*==================== 
 	PROJECTS PAGE BEGINNING
 ====================== */
-Body {
+.Projects-Body {
   background: #252525
 }
 
 .Card-1-Title, .Card-2-Title {
   font-size: 44px;
   font-family: Copperplate;  
-}
-
-.Creations-Title {
-  background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
-  color: red;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-weight: bold;
-  font-family: 'Arvo', serif;
-  text-align: center;
 }
 
 .Project-names {

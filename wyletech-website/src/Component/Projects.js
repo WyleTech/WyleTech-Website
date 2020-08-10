@@ -12,19 +12,23 @@ import ListGroupItem from 'react-bootstrap/ListGroupItem'
 
 const Projects = () => (
   <React.Fragment>
-    <body className="Projects-Body ">
-      <h1 className="Creations-Title">Our Creations</h1>
+    <body className="Projects-Body">
+      {/* Body-A and Body-P specifically tie to the bright, glowing Orange CSS styling */}
+      <p className="Body-P">
+        <a className="Body-A" href="">
+          Our Creations </a>
+      </p>
       {/* React Bootstrap Project examples */}
       <CardDeck >
-         {/* Card 1 */}
+        {/* Card 1 */}
         <Card className="Card-1 bg-info">
           <br></br>
           <Card.Img variant="top" src={RilDilSnip} style={{ height: 250, width: 610 }} />
           <Card.Body>
-             {/**CSS Card.Title note** won't style "className" (on CSS) like normal react, likely because it's a react/bootstrap listgroup - would only style under "class" */}
-            <Card.Title class= "Card-1-Title bg-dark text-white text-xl-center">Ril Dil Food-Truck Website</Card.Title> 
-            <Card.Text className= "bg-dark text-white text-center">
-              Tools: Java, MYSQL, Amazon Web Services AWS, Google API, HTML/CSS/React/Bootstrap, Form Validation. 
+            {/**CSS Card.Title note** won't style "className" (on CSS) like normal react, likely because it's a react/bootstrap listgroup - would only style under "class" */}
+            <Card.Title class="Card-1-Title bg-dark text-white text-xl-center">Ril Dil Food-Truck Website</Card.Title>
+            <Card.Text className="bg-dark text-white text-center">
+              Tools: Java, MYSQL, Amazon Web Services AWS, Google API, HTML/CSS/React/Bootstrap, Form Validation.
     </Card.Text>
           </Card.Body>
           <ListGroup className="list-group-flush bg-info">
@@ -42,14 +46,14 @@ const Projects = () => (
 
         {/* Card 2 */}
         <Card className="Card-2 bg-info">
-        <br></br>
+          <br></br>
           <Card.Img variant="top" src={NameGame} style={{ height: 250, width: 610 }} />
           <br></br>
-        
+
           <Card.Body>
-             {/**CSS Card.Title note** won't style "className" (on CSS) like normal react, likely because it's a react/bootstrap listgroup - would only style under "class" */}
-            <Card.Title class= "Card-2-Title bg-dark text-white text-xl-center"><a href= "http://name-game.us-west-1.elasticbeanstalk.com/aboutUs"> Name Game </a></Card.Title> 
-            <Card.Text className= "bg-dark text-white text-center">
+            {/**CSS Card.Title note** won't style "className" (on CSS) like normal react, likely because it's a react/bootstrap listgroup - would only style under "class" */}
+            <Card.Title class="Card-2-Title bg-dark text-white text-xl-center"><a href="http://name-game.us-west-1.elasticbeanstalk.com/aboutUs"> Name Game </a></Card.Title>
+            <Card.Text className="bg-dark text-white text-center">
               Tools: Angular Build with API consumption
     </Card.Text>
           </Card.Body>
@@ -67,7 +71,7 @@ const Projects = () => (
           </Card.Body>
         </Card >
 
-      {/* Card 3 */}
+        {/* Card 3 */}
         <Card className="Card-3 bg-info">
           <Card.Img variant="top" />
           <Card.Body>
