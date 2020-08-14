@@ -1,4 +1,4 @@
-Codebase for future site WyleTech - https://WyleTech.com
+Codebase for future site - WyleTech 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
