@@ -10,18 +10,15 @@ const About = () => (
       <header className="page-header">
 
         {/* Body-A and Body-P specifically tie to the bright, glowing Orange CSS styling */}
-        <p className="Body-P">
-          <a className="Body-A" href="">
-            Creative Software Engineers </a>
+        <div className="Body-P">
+          <a className="Body-A" href=""> <p>Creative Software Engineers</p></a>
 
-          <img className="Phone-App" src={PhoneApp} alt="PhoneApp.jpg" />
-          <img className="Cozy" src={Cozy} alt="Cozy.jpg" />
+          <h1 className="YourIdeas-Title text-success">You think of the idea....</h1>
+          <img className="Cozy" src={Cozy} alt="Cozy.jpg" /> 
 
-        </p>
-
-
-        <Jumbotron className="Home-Jumbotron-3 bg-info text-white">
-        </Jumbotron>
+          <h1 className="WeCode-Title text-success"> We code it into reality!</h1>
+          <img className="Phone-App" src={PhoneApp} alt="PhoneApp.jpg" /> 
+        </div>
 
       </header>
     </body>

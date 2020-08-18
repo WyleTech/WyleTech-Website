@@ -64,13 +64,7 @@
     padding: 100px;
     background-position: right;
   }
-/*  JumboTron3 Background Image */
-  .Home-Jumbotron-3 {
-    margin-top: 20px;
-    background-image: url("./images/CompEngineerin.jpg" );
-    background-size: auto 100%;
-    
-  }
+
 
 /* Nav Button Hover Border */
 .nav-link:hover {
@@ -257,6 +251,7 @@ transition: all 250ms ease-in-out 0s;
 /*==================== 
 	ABOUT US PAGE START
 ====================== */
+
 .About-Body {
   background-color: #252525;
   background: repeating-linear-gradient(45deg, #252525 0%, #252525 10%, #252525 0%, #252525 50%) 0 / 15px 15px;
@@ -280,40 +275,41 @@ transition: all 250ms ease-in-out 0s;
   font-family: Audiowide;
 }
 
-.Body-P .Body-A:hover {
+.Body-P .Body-A:hover, .YourIdeas-Title:hover, .WeCode-Title:hover {
   -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
   -moz-animation: neon5 1.5s ease-in-out infinite alternate;
   animation: neon5 1.5s ease-in-out infinite alternate;
 }
 
-.Body-P .Body-A:hover {
+.Body-P .Body-A:hover, .YourIdeas-Title:hover, .WeCode-Title:hover {
   color: #ffffff;
 }
 
-@-webkit-keyframes neon5 {
+/* Original Color of Neon Glow "#FF9900" */
+@-webkit-keyframes neon5 { 
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ff80, 0 0 70px #00ff80, 0 0 80px #00ff80, 0 0 100px #00ff80, 0 0 150px #00ff80;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ff80, 0 0 35px #00ff80, 0 0 40px #00ff80, 0 0 50px #00ff80, 0 0 75px #00ff80;
   }
 }
 
 @-moz-keyframes neon5 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ff80, 0 0 70px #00ff80, 0 0 80px #00ff80, 0 0 100px #00ff80, 0 0 150px #00ff80;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ff80, 0 0 35px #00ff80, 0 0 40px #00ff80, 0 0 50px #00ff80, 0 0 75px #00ff80;
   }
 }
 
 @keyframes neon5 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ff80, 0 0 70px #00ff80, 0 0 80px #00ff80, 0 0 100px #00ff80, 0 0 150px #00ff80;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ff80, 0 0 35px #00ff80, 0 0 40px #00ff80, 0 0 50px #00ff80, 0 0 75px #00ff80;
   }
 }
 
@@ -336,6 +332,8 @@ transition: all 250ms ease-in-out 0s;
   max-width: 100%;
   height: auto;
 }
+
+
 /*==================== 
 	ABOUT US PAGE END
 ====================== */
