@@ -8,6 +8,7 @@ import RilDilSnip from '../images/RilDilSnip.jpg';
 import NameGame from '../images/NameGame.jpg';
 import ListGroup from 'react-bootstrap/ListGroup'
 import ListGroupItem from 'react-bootstrap/ListGroupItem'
+import "bootstrap/dist/css/bootstrap.css"
 //import CardColumns from "react-bootstrap/CardColumns";
 
 const Projects = () => (
@@ -21,7 +22,7 @@ const Projects = () => (
       {/* React Bootstrap Project examples */}
       <CardDeck >
         {/* Card 1 */}
-        <Card className="Card-1 bg-info">
+        <Card className="Card-1 bg-warning"  >
           <br></br>
           <Card.Img variant="top" src={RilDilSnip} style={{ height: 250, width: 610 }} />
           <Card.Body>
@@ -45,7 +46,7 @@ const Projects = () => (
         </Card >
 
         {/* Card 2 */}
-        <Card className="Card-2 bg-info">
+        <Card className="Card-2 bg-warning">
           <br></br>
           <Card.Img variant="top" src={NameGame} style={{ height: 250, width: 610 }} />
           <br></br>
@@ -72,14 +73,22 @@ const Projects = () => (
         </Card >
 
         {/* Card 3 */}
-        <Card className="Card-3 bg-info">
+        <Card className="Card-3 bg-warning">
           <Card.Img variant="top" />
           <Card.Body>
-            <Card.Title className="Card-Titles">Check out our Github</Card.Title>
+            <Card.Title class="Git-Title">GitHub</Card.Title>
             <Card.Text>
 
-              <a className="Project-names text-danger" href=
-                "https://github.com/WyleTech"> WyleTech Github
+              <a className="Git-Links text-dark" href=
+                "https://github.com/WyleTech"> WyleTech 
+        </a>
+<br></br>
+        <a className="Git-Links text-dark" href=
+                "https://github.com/KyloRich"> Squirrel Master
+        </a>
+        <br></br>
+        <a className="Git-Links text-dark" href=
+                "https://github.com/wcompton"> Bill
         </a>
             </Card.Text>
           </Card.Body>

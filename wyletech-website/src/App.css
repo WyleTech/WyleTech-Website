@@ -342,12 +342,50 @@ transition: all 250ms ease-in-out 0s;
 	PROJECTS PAGE BEGINNING
 ====================== */
 .Projects-Body {
-  background: #252525
+  background: #252525;
+}
+
+.Card-1, .Card-2 {
+  background-color: #ff8d1e;
+  color:  #ff8d1e;
+  
+
+
+
+}
+
+/* POP ART STYLING */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+
+body{
+ 
+	font-family: 'Montserrat', sans-serif;
+}
+
+.Git-Title {
+  font-weight: bold;
+  font-size:120px;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+						8px 8px #ff1f8f,
+						20px 20px #000000;
+} 
+
+.Git-Links {
+  font-size:40px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+
 }
 
 .Card-1-Title, .Card-2-Title {
   font-size: 44px;
   font-family: Copperplate;  
+  text-decoration: underline;
 }
 
 .Project-names {
@@ -468,28 +506,28 @@ div.Book{
 } */
 
 @media (max-width: 576px) { 
-  .Book, .Creations-Title {
+  .Book, .Creations-Title, .Git-Title {
    font-size: 3em;;
  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .Book, .Creations-Title {
+  .Book, .Creations-Title, .Git-Title {
  font-size: 4em;; 
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  
-  .Book, .Creations-Title {
+  .Book, .Creations-Title, .Git-Title {
  font-size: 6em;; 
  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-  .Book, .Creations-Title {
+  .Book, .Creations-Title, .Git-Title {
  font-size: 8em;;
  }
 }
