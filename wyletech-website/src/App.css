@@ -90,7 +90,7 @@
   border-radius: 10px;
 }
 
-.glow-on-hover:before, .glow-on-hover-2:before {
+.glow-on-hover:before, .glow-on-hover-2:before  {
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
@@ -108,15 +108,15 @@
   
 }
 
-.glow-on-hover:active, .glow-on-hover-2:active {
+.glow-on-hover:active, .glow-on-hover-2:active  {
   color: #000
 }
 
-.glow-on-hover:active:after, .glow-on-hover-2:active:after {
+.glow-on-hover:active:after, .glow-on-hover-2:active:after  {
   background: transparent;
 }
 
-.glow-on-hover:hover:before, .glow-on-hover-2:hover:before {
+.glow-on-hover:hover:before, .glow-on-hover-2:hover:before  {
   opacity: 1;
 }
 
@@ -263,25 +263,25 @@ transition: all 250ms ease-in-out 0s;
   margin: 20px 0 20px 0;
 }
 
-.Body-A {
+.Creations, .About {
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.Body-P, .Body-A {
+.Body-P, .Creations, .About {
   color: #FF9900;
   font-family: Audiowide;
 }
 
-.Body-P .Body-A:hover, .YourIdeas-Title:hover, .WeCode-Title:hover {
+.Body-P .Creations:hover, .About:hover, .YourIdeas-Title:hover, .WeCode-Title:hover {
   -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
   -moz-animation: neon5 1.5s ease-in-out infinite alternate;
   animation: neon5 1.5s ease-in-out infinite alternate;
 }
 
-.Body-P .Body-A:hover, .YourIdeas-Title:hover, .WeCode-Title:hover {
+.Body-P .Creations:hover, .About:hover, .YourIdeas-Title:hover, .WeCode-Title:hover {
   color: #ffffff;
 }
 
@@ -322,6 +322,18 @@ transition: all 250ms ease-in-out 0s;
   }
 }
 
+.About {
+  font-size: 70px;
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) { 
+  .About, .YourIdeas-Title, .WeCode-Title {
+   font-size: 30px;
+ }
+}
+
+
 /* About US IMAGES  */
 .Phone-App, .Cozy {
   width: 350px;
@@ -332,7 +344,6 @@ transition: all 250ms ease-in-out 0s;
   max-width: 100%;
   height: auto;
 }
-
 
 /*==================== 
 	ABOUT US PAGE END
@@ -349,9 +360,6 @@ transition: all 250ms ease-in-out 0s;
   background-color: #ff8d1e;
   color:  #ff8d1e;
   
-
-
-
 }
 
 /* POP ART STYLING */
@@ -422,6 +430,7 @@ Book US Beginning
 body{
   font-family: 'Lato', sans-serif;
 }
+
 
 div.Book{
   width: 90%;

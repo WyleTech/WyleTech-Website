@@ -16,7 +16,7 @@ const Projects = () => (
     <body className="Projects-Body">
       {/* Body-A and Body-P specifically tie to the bright, glowing Orange CSS styling */}
       <p className="Body-P">
-        <a className="Body-A" href="">
+        <a className="Creations" href="">
           Our Creations </a>
       </p>
       {/* React Bootstrap Project examples */}
@@ -41,7 +41,6 @@ const Projects = () => (
           <br></br>
           <Card.Img variant="top" src={JavaReact} style={{ height: 250, width: 610 }} />
           <Card.Body>
-            <Card.Link href="#">Card Link</Card.Link>
           </Card.Body>
         </Card >
 

@@ -15,17 +15,20 @@ class Home extends React.Component {
       
       {/* React/Bootstrap JumboTron - homepage */}
       <Jumbotron className="Home-Jumbotron-1 bg-info">
+        <div>
   <h1 className="Jumbo-Title-1">Wyle-Tech Software Solutions</h1>
   <p className="Content-1">
   Our talented, fully in-house, team of US-based, software developers<br></br>  create software products, applications, and any other<br></br> software solutions to accomodate your business needs. 
 
-<p>
+
+  
 <br></br>
   <Link to="/book">
     <Button className="glow-on-hover">Book Our Services</Button>
     </Link>
     </p>
-  </p>
+  
+  </div>
   <p>
  
   </p>

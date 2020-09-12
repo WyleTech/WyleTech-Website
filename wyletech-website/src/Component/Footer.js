@@ -36,7 +36,7 @@ class Footer extends React.Component {
                       <div className="widget no-box">
                         <h5 className="widget-title">Get Started<span /></h5>
                         <p>Get access to your wildest software dreams</p>
-                        <a className="btn" href="/book" target="_blank">Register Now</a>
+                        <a className="btn" href="/book" target="_blank">Let's Go!</a>
                       </div>
                     </div>
                     <div className="col-xs-12 col-sm-6 col-md-3">

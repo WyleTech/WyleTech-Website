@@ -11,7 +11,7 @@ const About = () => (
 
         {/* Body-A and Body-P specifically tie to the bright, glowing Orange CSS styling */}
         <div className="Body-P">
-          <a className="Body-A" href=""> <p>Creative Software Engineers</p></a>
+          <a className="About" href=""> <p>Take your business to the next level!</p></a>
 
           <h1 className="YourIdeas-Title text-success">You think of the idea....</h1>
           <img className="Cozy" src={Cozy} alt="Cozy.jpg" /> 
