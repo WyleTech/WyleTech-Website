@@ -4,11 +4,14 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Card from 'react-bootstrap/Card';
 import AngularApi from '../images/AngularApi.jpg';
 import JavaReact from '../images/JavaReact.png';
+import smGit from '../images/smGit.PNG';
 import RilDilSnip from '../images/RilDilSnip.jpg';
 import NameGame from '../images/NameGame.jpg';
 import ListGroup from 'react-bootstrap/ListGroup'
 import ListGroupItem from 'react-bootstrap/ListGroupItem'
 import "bootstrap/dist/css/bootstrap.css"
+
+
 //import CardColumns from "react-bootstrap/CardColumns";
 
 const Projects = () => (
@@ -82,9 +85,8 @@ const Projects = () => (
                 "https://github.com/WyleTech"> WyleTech 
         </a>
 <br></br>
-        <a className="Git-Links text-dark" href=
-                "https://github.com/KyloRich"> Squirrel Master
-        </a>
+       <p><a className="Git-Links text-dark" href= "https://github.com/KyloRich"> Squirrel Master </a></p> 
+        <Card.Img variant="top" src={smGit} style={{ height: 250, width: 550 }} />
         <br></br>
         <a className="Git-Links text-dark" href=
                 "https://github.com/wcompton"> Bill
@@ -94,6 +96,8 @@ const Projects = () => (
         </Card>
 
       </CardDeck>
+
+      <Card username='kylorich' theme={true} />
     </body>
 
   </React.Fragment>
